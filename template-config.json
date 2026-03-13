@@ -1,0 +1,45 @@
+{
+  "template_id": "qr-deal-drop-v1-2026",
+  "name": "Quality Roots — The Deal Drop",
+  "created_at": "2026-03-13T00:00:00Z",
+  "version": "1.0.0",
+  "theme": {
+    "style": "dark-vault-dramatic",
+    "description": "Solo product spotlight with cinematic price reveal. Dark forest green atmosphere, electric lime savings callout, slam-entry price typography. Each product gets a 10-second solo stage: category chip drops, identity reveals via SplitText, original price strikes through, new price slams in at 2.2x scale, savings badge snaps in rotated.",
+    "colors": ["#080F09", "#0F2012", "#2B6E28", "#8ED43F", "#C8963A", "#F0E8D0", "#6B8C65", "#FFFFFF"],
+    "mood": "authoritative, high-energy, deal-forward, atmospheric, cinematic",
+    "tags": ["cannabis", "dispensary", "deals", "dark", "cinematic", "price-reveal", "quality-roots"]
+  },
+  "capabilities": {
+    "products_per_cycle": 1,
+    "cycles_through_all_products": true,
+    "min_products": 1,
+    "max_products": "unlimited"
+  },
+  "animation": {
+    "cycle_duration_seconds": 10,
+    "fps": 30,
+    "phases": {
+      "entrance": { "start": 0, "end": 1.7, "description": "Glow bloom, chip drop, brand slide, image arrival" },
+      "identity": { "start": 1.4, "end": 2.6, "description": "Rule draw, product name SplitText reveal" },
+      "price_drama": { "start": 3.0, "end": 5.5, "description": "WAS price, strike-through, NOW label, price slam, savings badge" },
+      "living_moment": { "start": 5.5, "end": 8.5, "description": "Float, glow pulse, badge pulse, particles" },
+      "exit": { "start": 8.5, "end": 10.0, "description": "Staggered left exit, product slides right, fade" }
+    },
+    "uses_plugins": ["SplitText", "DrawSVGPlugin", "CustomEase"]
+  },
+  "assets": {
+    "background": "https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1773442131252%2Fassets%2Fbackground-1773442686459.png",
+    "overlays": [
+      "https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1773442131252%2Fassets%2Fbotanical-overlay-1773442692009.png"
+    ],
+    "icons": [],
+    "fonts": ["Bebas Neue", "Barlow Condensed"]
+  },
+  "technical": {
+    "resolution": "1920x1080",
+    "performance": "optimized",
+    "browser_compatibility": "chrome_latest",
+    "rendering": "headless_browser_video"
+  }
+}

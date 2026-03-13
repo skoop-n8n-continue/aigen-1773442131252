@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality Roots — The Deal Drop</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- GSAP Core + Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js?v=r4p9x2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js?v=r4p9x2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/DrawSVGPlugin.min.js?v=r4p9x2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/CustomEase.min.js?v=r4p9x2"></script>
+
+  <link rel="stylesheet" href="style.css?v=r4p9x2">
+</head>
+<body>
+  <div id="scene">
+
+    <!-- Static background -->
+    <div id="background"></div>
+
+    <!-- Dark vignette overlay -->
+    <div id="vignette"></div>
+
+    <!-- Background category marquee watermark -->
+    <div id="bg-marquee-wrap">
+      <div id="bg-marquee">GUMMIES · GUMMIES · GUMMIES · GUMMIES · GUMMIES · GUMMIES · GUMMIES · GUMMIES ·&nbsp;</div>
+    </div>
+
+    <!-- Atmospheric glow behind product -->
+    <div id="product-glow"></div>
+
+    <!-- Dynamic product content injected per cycle -->
+    <div id="products-container"></div>
+
+    <!-- Botanical foreground layer -->
+    <div id="foreground-layer">
+      <img
+        src="https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1773442131252%2Fassets%2Fbotanical-overlay-1773442692009.png"
+        alt=""
+        aria-hidden="true"
+      >
+    </div>
+
+    <!-- Full-screen flash overlay for price slam -->
+    <div id="flash-overlay"></div>
+
+    <!-- Persistent brand badge (top-right) -->
+    <div id="qr-brand-badge">
+      <span class="badge-text">QUALITY ROOTS</span>
+      <div class="badge-rule"></div>
+    </div>
+
+    <!-- Particle container (appended dynamically) -->
+    <div id="particle-layer"></div>
+
+  </div>
+
+  <script src="animation.js?v=r4p9x2"></script>
+</body>
+</html>
